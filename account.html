@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REDWears</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./css/all.min copy.css">
+</head>
+<body>
+  <header class="top-header">
+    <a href="./index.html" class="brand-details">
+      <i class="fa fa-computer"></i> |
+      <h1 class="brand-name">REDDesigner</h1>
+    </a>
+    <nav class="top-nav">
+      <ul   class="nav-wrap">
+        <li><a href="./index.html">Home</a></li>
+        <li>
+            <a href="./clothing.html">Clothing</a>
+            <ul class="nav-dropdown">
+              <h2>   Fashion Wears & Trouser</h2>
+                <li><a href="./shirt.html">Shirt</a></li>
+                <li><a href="./singlet.html">Singlet</a></li>
+                <li><a href="./tshirt.html">T-shirt</a></li>
+                <li><a href="./sweatshirt.html">Sweat Shirt</a></li>
+                <li><a href="./poloshirt.html">Polo-shirt</a></li>
+                <li><a href="./jeans.html">Jeans</a></li>
+                <li><a href="./chinos.html">Chinos</a></li>
+                <li><a href="./shorts.html">Shorts</a></li>
+              </ul>
+        </li>
+        <li>
+          <a href="./shoe.html">Shoes</a>
+          <ul class="nav-dropdown">
+            <h2>Casual Shoes and Formal Shoes</h2>
+            <li><a href="./sneakers.html">Sneaker</a></li>
+            <li><a href="./casualboots.html">Casual Boots</a></li>
+            <li><a href="./formalboots.html">Formal Boots</a></li>
+            <li><a href="./brouges.html">Brouges</a></li>
+            <li><a href="./loafersandsmoccasin.html">Loafers & moccasin</a></li>
+            <li><a href="./slippers.html">Slippers</a></li>
+            <li><a href="./sandals.html">Sandals</a></li>
+          </ul>
+        </li>
+        <li>
+             <a href="./accesseries.html">Accessories</a> 
+             <ul class="nav-dropdown">
+                <h2>Accessories,Watches and SunGlasses</h2>
+                  <li><a href="./socks.html">Socks</a></li>
+                  <li><a href="./bracelets.html">Bracelets</a></li>
+                  <li><a href="./malebag.html">Male Bags</a></li>
+                  <li><a href="./belt&wallet.html">Belts & Wallets</a></li>
+                  <li><a href="./underwear.html">Underwears</a></li>
+                  <li><a href="./tattoosleeves.html">Tattoo Sleeves</a></li>
+                  <li><a href="./menwatch.html">Men Watches</a></li>
+                  <li><a href="./womenwatch.html">Women Watches</a></li>
+                  <li><a href="./sunglasses.html">Sun-Glasses</a></li>
+                  <li><a href="./laptopbag.html">Laptop Bags</a></li>
+                  <li><a href="./malecolgnes.html">Male Cologne</a></li>
+                  <li><a href="./femalecologne.html">Female Cologne</a></li>
+                </ul>
+        </li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./account.html">Account</a></li>
+      </ul>
+    </nav>
+    <form action="" class="nav-extra">
+      <input type="search" name="" id="mySearch" class="nav-search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <div class="nav-cart" >     
+      <i class="fa fa-shopping-cart" ></i>
+      <div class="cart-card">
+          <div class="cart-warp"></div>
+      </div>
+  </header>
+    
+    <main class="main-body">
+        <section id="form-section">
+      <!-- <img src="./images/bison.JPG" class="form-image" alt="">   -->
+            <form id="login-form" class="form active" action="">
+              <!-- fieldset, label, input/textarea/select/progress/meter, button -->
+              <h2>Login to your Account</h2>
+              <label for="email">Email <i class="fa fa-envelope"></i></label>
+              <input type="email" id="email" value="" placeholder="Enter your email" required
+              />
+              <label for="password">Password <i class="fa fa-lock"></i></label>
+              <input type="password" id="password" value="" placeholder="Enter your password" required
+              />
+              <label for="remember">
+                <input type="checkbox" name="remember" id="remember" value="No" placeholder=""/> Remember Me
+              </label>
+              <div class="g-recaptcha" data-sitekey="6ads67asdf876olasdfa98y4" data-callback="allowLogin"></div>
+              <button  id="login-btn" type="submit">Login!</button>
+              <small class="flip-login">Don't have an account yet? Sign up!</small>
+            </form>
+            <form id="signup-form" class="form" action="" method="post">
+              <!-- fieldset, label, input/textarea/select/progress/meter, button -->
+              <h2>Personal Information</h2>
+              <label for="title">Title</label>
+              <select name="" id="title">
+                <option value="">Mr</option>
+                <option value="">Mrs</option>
+                <option value="">Miss</option>
+                <option value="" selected>Dr</option>
+                <option value="">Prof</option>
+                <option value="">Engr.</option>
+              </select>
+              <label for="fullname">Full Name <i class="fa fa-user"></i></label>
+              <input type="text" id="fullname" value="John Melina" placeholder="Enter your Full Name" />
+              <label for="email">Email <i class="fa fa-envelope"></i></label>
+              <input type="email" id="email" value="" placeholder="Enter your email" required />
+              <label for="password">Password <i class="fa fa-lock"></i></label>
+              <input type="password" id="password" value="" placeholder="Enter your password" required />
+              <label for="dob">Date of Birth <i class="fa fa-calendar"></i></label>
+              <input type="date" id="dob" value="" placeholder="" />
+              <label>Gender</label>
+              <label for="male">
+                <input type="radio" name="gender" id="male" value="Male" placeholder="" checked />Male
+              </label>
+              <label for="female">
+                <input type="radio" name="gender" id="female" value="Female" placeholder=""/> Female
+              </label>
+              <label for="others">
+                <input type="radio" name="gender" id="others" value="Others" placeholder=""/> Others
+              </label>
+              <label for="country">Country <i class="fa fa-map"></i></label>
+              <select disabled name="" id="country">
+                <optgroup label="Africa">
+                  <option value="">Nigeria</option>
+                  <option value="">South Africa</option>
+                </optgroup>
+                <optgroup label="Asia">
+                  <option value="">Japan</option>
+                  <option value="">North Korea</option>
+                </optgroup>
+                <optgroup label="Europe">
+                  <option value="">France</option>
+                  <option value="">Denmark</option>
+                </optgroup>
+              </select>
+              <label for="state">State <i class="fa fa-map"></i></label>
+              <input
+                type="search"
+                name=""
+                id="state"
+                placeholder="Select your state"
+                lis
+              />
+              <datalist id="all-states">
+                <option value="FCT">FCT</option>
+                <option value="Abia">Abia</option>
+                <option value="Lagos">Lagos</option>
+                <option value="Kebbi">Kebbi</option>
+              </datalist>
+              <label for="moreinfo">Tell us more about you</label>
+              <textarea name="" id="moreinfo" cols="30" placeholder="Describe yourself briefly..." rows="10">Type Comments here...</textarea>
+              <progress min="0" max="100" value="60"></progress>
+              <button type="submit">Create Profile</button>
+              <small class="flip-signup">Have an account? Login!</small>
+            </form>
+          </section>
+    </main>
+     <footer>
+        <small>&copy;2022. REDWears | All rights reserved. </small>
+        <span class="footer-social">
+          <a href="./about.html" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/janedoe"><i class="fab fa-facebook"></i></a>
+          <a href=""><i class="fab fa-slack"></i></a>
+        </span>
+      </footer>
+      <script src="./all.min.js"></script>
+     
+    <script src="./script.js"></script>
+    <script>
+        function allowLogin(){
+          let loginBtn = document.querySelector('#login-btn');
+          loginBtn.removeAttribute("disabled");
+        }
+        let flipLogin = document.querySelector('.flip-login');
+        let flipSignup = document.querySelector('.flip-signup');
+        let loginForm = document.querySelector('#login-form');
+        let signupForm = document.querySelector('#signup-form');
+
+        flipLogin.addEventListener("click", function(e){
+            loginForm.classList.toggle('active');
+            signupForm.classList.toggle('active');
+        })
+        flipSignup.addEventListener("click", function(e){
+            loginForm.classList.toggle('active');
+            signupForm.classList.toggle('active');
+        })
+        
+    </script>
+</body>
+</html>
